@@ -1,118 +1,126 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* :root {
-    --gradient: linear-gradient(to right bottom, #3bbcec, #575be5);
-    --dark: #082046;
-    --semi-dark: #0f2952;
-    --light: #fff;
-    --link: #1e2ebd;
-  } */
-.home{
+
+.home {
     height: 100vh;
     width: 100vw;
-    background-color: antiquewhite;
-
+    background-color: #f7f7f7; /* Lighter background for a softer look */
 }
-.sidebar{
+
+.sidebar {
     height: 100vh;
     width: 20vw;
-    background-color: #2C2E44;
-    box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.75);
+    background-color: #1e2a38; /* Darker shade for a modern look */
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.3); /* Softer shadow for a subtle effect */
 }
-.home-content{
+
+.logo-container {
+    width: 100%;
+    height: 15vh; /* Adjusted height for a balanced look */
+    background-color: #1e2a38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 70%; /* Adjusted to fit better */
+}
+
+.navlist {
+    padding-left: 0;
+}
+
+.navlist li {
+    list-style: none;
+    padding: 1rem 1.5rem; /* Reduced padding for a tighter layout */
+}
+
+.navlist li:hover {
+    background-color: #3a4a60; /* Subtle hover effect */
+    border-radius: 8px; /* Softer radius for the hover effect */
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light color for better contrast */
+    font-size: 1.2rem; /* Slightly smaller for better readability */
+    font-family: "Poppins", sans-serif;
+}
+
+.home-content {
     height: 100vh;
     width: 80vw;
     background: linear-gradient(to right bottom, #6DBDE5, #699CCB);
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.navlist{
-padding-left: 0.6rem;
-}
-.navlist li{
-    list-style: none;
-    padding: 1.2rem 0;
-
-}
-.navlist li:hover{
-    background-color: #C676CB;
-    border-radius: 10px;
-}
-.navlist li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: "Poppins", sans-serif;
-}
-.logo-container{
-    width: 100%;
-    height: 20vh;
-    background-color: #2C2E44;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-.logo-container img{
-    width: 80%;
+    padding: 2rem; /* Added padding for better spacing */
 }
 
-.greet-inner{
-    height: 40vh;
+.greet-inner {
+    height: auto; /* Adjusted to fit content */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
     width: 90%;
+    max-width: 1200px; /* Added max-width for larger screens */
     border-radius: 1rem;
-   
-    box-shadow: 0px 19px 32px 0px rgba(106,140,217,1);
-    
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    padding: 2rem; /* Added padding for better spacing */
 }
-.accordion{
+
+.greet-wrapper {
+    text-align: left;
+}
+
+#greet {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; /* Darker color for better readability */
+}
+
+#greet-message {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555; /* Darker color for better readability */
+}
+
+.accordion {
     width: 90%;
     margin-top: 3rem;
-    /* background-color: #A5CFE5; */
     border: none;
-    
+}
 
-}
-.accordion-item{
-    background-color: #90C0E1;
-    border: none;
+.accordion-item {
+    background-color: #ffffff; /* White background for a clean look */
+    border: 1px solid #e0e0e0; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
     margin-bottom: 1rem;
-    
-    /* height: 4rem; */
 }
-.accordion-header{
-    background-color: #92C1E1;
+
+.accordion-header {
+    background-color: #e0f7fa; /* Light teal background for headers */
     border: none;
-   
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
 }
-.accordion-button{
-    background-color: #ABD4E6;
+
+.accordion-button {
+    background-color: #e0f7fa; /* Match header background */
     border: none;
     height: 4rem;
     font-size: 1.3rem;
     font-weight: bold;
-   
+    color: #00796b; /* Dark teal for text */
 }
-.accordion-body{
-    background-color: #90C0E1;
+
+.accordion-body {
+    background-color: #b2dfdb; /* Slightly darker teal for body */
     border: none;
-   
-}
-#greet-message{
-    font-size: 3.5rem;
-    font-weight: bold;  
-    color: #fff;
-}
-#greet{
-    font-size: 2.5rem;
-    font-weight: bold;  
-    color: #fff;
 }
