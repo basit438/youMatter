@@ -7,19 +7,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="music.css">
 </head>
 <body>
     <section class="home row">
         <div class="col-2 sidebar">
            <div class="logo-container my-3">
-            <img src="../assets/logo.svg" alt="">
+            <img src="../assets/logo.svg" alt="Logo">
         </div>
 
             <div class="navlist-container">
@@ -33,77 +29,227 @@
             </div>
         </div>
 
-        <!-- //content section -->
-
-
+        <!-- Content Section -->
         <div class="col-9 music container">
-
             <div class="row">
                 <div class="col-12">
                     <label for="select-music" class="music-label">Music</label>
                     <select name="" id="select-music">
                         <option value="all">All</option>
                         <option value="lofi">Lofi</option>
-                        <option value="instrumental">instrumental</option>
+                        <option value="instrumental">Instrumental</option>
                         <option value="nature&instrument">Nature and Instrument</option>
                         <option value="naturemelodies">Nature Melodies</option>
                         <option value="classicalmusic">Classical Music</option>
                         <option value="motivating">Motivating</option>
-                        <option value="ambeint">Ambeint</option>
+                        <option value="ambient">Ambient</option>
                     </select>
                 </div>
-
             </div>
 
-            <!-- music content section  -->
+            <!-- Music Content Section -->
+
+            <!-- lofi section -->
+            <div class="music-content  row">
+                <div class="music-card lofi col-3">
+                    <div class="overlay">
+                        <h1>Lofi-orchestra</h1>
+                    </div>
+                    <img src="../assets/healing water.jpg" alt="Healing Water">
+                    <audio src="../assets/./lofimusic/lofi-orchestra-162306.mp3" controls></audio>
+                </div>
+                <div class="music-card lofi col-3">
+                    <div class="overlay">
+                        <h1>Lofi-relax-travel</h1>
+                    </div>
+                    <img src="../assets/tears of joy.jpg" alt="Tears of Joy">
+                    <audio src="../assets/./lofimusic/lofi-relax-travel-by-lofium-123560.mp3" controls></audio>
+                </div>
+                <div class="music-card lofi col-3">
+                    <div class="overlay">
+                        <h1>Lofi-music</h1>
+                    </div>
+                    <img src="../assets/kiss the sky.jpg" alt="Kiss the Sky">
+                    <audio src="../assets/./lofimusic/lofi-study-112191.mp3" controls></audio>
+                </div>
+            </div>
+
+            <!-- Instrumental section -->
             <div class="music-content row">
-                
                 <div class="music-card col-3">
-                    <img src="../assets/healing water.jpg" alt="">
+                    <div class="overlay">
+                        <h1>-Caves of Dawn</h1>
+                    </div>
+                    <img src="../assets/a melodious voice.jpg" alt="A Melodious Voice">
+                    <audio src="../assets/./instrumental/caves-of-dawn-10376.mp3" controls></audio>
                 </div>
                 <div class="music-card col-3">
-                    <img src="../assets/tears of joy.jpg" alt="">
+                    <div class="overlay">
+                        <h1>Instrumental-Presentation</h1>
+                    </div>
+                    <img src="../assets/rise up.jpg" alt="Rise Up">
+                    <audio src="../assets/./instrumental/instrumental-presentation-186789.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <div class="overlay">
+                        <h1>Jazz Funk Groove</h1>
+                    </div>
+                    <img src="../assets/wistful harp.jpg" alt="Wistful Harp">
+                    <audio src="../assets/./instrumental/jazz-funk-groove-instrumental-222618 (1).mp3" controls></audio>
+                </div>
+            </div>
 
+            <div class="music-content row">
+                <div class="music-card col-3">
+                    <img src="../assets/they say i can't.jpg" alt="They Say I Can't">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
                 </div>
                 <div class="music-card col-3">
-                    <img src="../assets/kiss the sky.jpg" alt="">
+                    <img src="../assets/journey to the promise.jpg" alt="Journey to the Promise">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
                 </div>
-               
+                <div class="music-card col-3">
+                    <img src="../assets/lifting dreams.jpg" alt="Lifting Dreams">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
             </div>
             <div class="music-content row">
-                
                 <div class="music-card col-3">
-                    <img src="../assets/a melodious voice.jpg" alt="">
+                    <img src="../assets/healing water.jpg" alt="Healing Water">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
                 </div>
                 <div class="music-card col-3">
-                    <img src="../assets/rise up.jpg" alt="">
+                    <img src="../assets/tears of joy.jpg" alt="Tears of Joy">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/kiss the sky.jpg" alt="Kiss the Sky">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+            </div>
 
+            <div class="music-content row">
+                <div class="music-card col-3">
+                    
+                    <img src="../assets/a melodious voice.jpg" alt="A Melodious Voice">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
                 </div>
                 <div class="music-card col-3">
-                    <img src="../assets/wistful harp.jpg" alt="">
+                    <img src="../assets/rise up.jpg" alt="Rise Up">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
                 </div>
-               
+                <div class="music-card col-3">
+                    <img src="../assets/wistful harp.jpg" alt="Wistful Harp">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+            </div>
+
+            <div class="music-content row">
+                <div class="music-card col-3">
+                    <img src="../assets/they say i can't.jpg" alt="They Say I Can't">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/journey to the promise.jpg" alt="Journey to the Promise">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/lifting dreams.jpg" alt="Lifting Dreams">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
             </div>
             <div class="music-content row">
-                
                 <div class="music-card col-3">
-                    <img src="../assets/they say i can't.jpg" alt="">
+                    <img src="../assets/healing water.jpg" alt="Healing Water">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
                 </div>
                 <div class="music-card col-3">
-                    <img src="../assets/journey to the promise.jpg" alt="">
-
+                    <img src="../assets/tears of joy.jpg" alt="Tears of Joy">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
                 </div>
                 <div class="music-card col-3">
-                    <img src="../assets/lifting dreams.jpg" alt="">
+                    <img src="../assets/kiss the sky.jpg" alt="Kiss the Sky">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
                 </div>
-               
             </div>
 
-              
+            <div class="music-content row">
+                <div class="music-card col-3">
+                    
+                    <img src="../assets/a melodious voice.jpg" alt="A Melodious Voice">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/rise up.jpg" alt="Rise Up">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/wistful harp.jpg" alt="Wistful Harp">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
             </div>
 
+            <div class="music-content row">
+                <div class="music-card col-3">
+                    <img src="../assets/they say i can't.jpg" alt="They Say I Can't">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/journey to the promise.jpg" alt="Journey to the Promise">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/lifting dreams.jpg" alt="Lifting Dreams">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+            </div>
+            <div class="music-content row">
+                <div class="music-card col-3">
+                    <img src="../assets/healing water.jpg" alt="Healing Water">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/tears of joy.jpg" alt="Tears of Joy">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/kiss the sky.jpg" alt="Kiss the Sky">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+            </div>
 
-    </section> 
+            <div class="music-content row">
+                <div class="music-card col-3">
+                    
+                    <img src="../assets/a melodious voice.jpg" alt="A Melodious Voice">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/rise up.jpg" alt="Rise Up">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/wistful harp.jpg" alt="Wistful Harp">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+            </div>
+
+            <div class="music-content row">
+                <div class="music-card col-3">
+                    <img src="../assets/they say i can't.jpg" alt="They Say I Can't">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/journey to the promise.jpg" alt="Journey to the Promise">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+                <div class="music-card col-3">
+                    <img src="../assets/lifting dreams.jpg" alt="Lifting Dreams">
+                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="music.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

@@ -1,76 +1,208 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* :root {
-    --gradient: linear-gradient(to right bottom, #3bbcec, #575be5);
-    --dark: #082046;
-    --semi-dark: #0f2952;
-    --light: #fff;
-    --link: #1e2ebd;
-  } */
-.home{
+
+.home {
+    display: flex;
     height: 100vh;
     width: 100vw;
-    background-color: antiquewhite;
-
 }
-.sidebar{
-    height: 100vh;
+
+.sidebar {
     width: 20vw;
     background-color: #2C2E44;
     box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.75);
-}
-.home-content{
-    height: 100vh;
-    width: 80vw;
-    background: linear-gradient(to right bottom, #6DBDE5, #699CCB);
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    z-index: 1; /* Ensure sidebar is on top */
 }
-.navlist{
-padding-left: 0.6rem;
-}
-.navlist li{
-    list-style: none;
-    padding: 1.2rem 0;
 
-}
-.navlist li:hover{
-    background-color: #C676CB;
-    border-radius: 10px;
-}
-.navlist li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: "Poppins", sans-serif;
-}
-.logo-container{
+.logo-container {
     width: 100%;
-    height: 20vh;
-    background-color: #2C2E44;
+    height: 15vh;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
-.logo-container img{
-    width: 80%;
+
+.logo-container img {
+    width: 60%;
+    height: auto;
 }
-.music{
-    width: 80vw;
-    height: 100vh;
-    background-image: url("../assets/home-bg.jpg");
-    opacity: 60%;
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
+
+.navlist {
+    padding-left: 0;
+    width: 100%;
 }
-.music-label{
-    font-size: 2.5rem;
-    font-family: "Poppins", sans-serif;
+
+.navlist li {
+    list-style: none;
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navlist li:hover {
+    background-color: #3A3C60;
+}
+
+.navlist li a {
+    text-decoration: none;
     color: #fff;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.navlist li i {
+    margin-right: 0.8rem;
+}
+
+/* Adjusted relax container */
+.relax.container {
+    margin-left: 20vw; /* Ensure content starts after the sidebar */
+    width: calc(100vw - 20vw); /* Adjust width to fill the remaining space */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-image: url(../assets/stones-1994691_1920.jpg);
+   background-position: center;
+   background-size: cover;
+   /* background: rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    position: relative;
+}
+
+.breath-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(15, 15, 15, 0.3);
+    transition: transform 0.5s ease;
+}
+
+.breath-circle::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid rgba(7, 7, 7, 0.5);
+    border-radius: 50%;
+    animation: pulse 4s infinite ease;
+}
+
+.breath-circle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(188, 31, 31, 0.8) 0%, rgba(255, 255, 255, 0) 60%);
+    opacity: 0;
+}
+
+.breath-circle.inhale {
+    transform: scale(1.1);
+}
+
+.breath-circle.inhale::after {
+    opacity: 0.3;
+}
+
+.breath-circle.exhale {
+    transform: scale(1);
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.7; }
+    50% { transform: scale(1.05); opacity: 0.3; }
+    100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+.breath-text {
+    position: relative;
+    z-index: 1;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.controls {
+    margin-top: 30px;
+}
+
+button, select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #0a0707;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover, select:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23ffffff' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    padding-right: 40px;
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: float 15s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    25% { transform: translateY(-100px) translateX(100px); }
+    50% { transform: translateY(-200px) translateX(0); }
+    75% { transform: translateY(-100px) translateX(-100px); }
 }
