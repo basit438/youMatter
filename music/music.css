@@ -1,20 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Home Section */
 .home {
     display: flex;
     height: 100vh;
     width: 100vw;
 }
 
+/* Sidebar */
 .sidebar {
     height: 100vh;
     width: 20vw;
     background-color: #2C2E44;
-    box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 0px 18px 0px rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +19,7 @@
     top: 0;
     left: 0;
     overflow: auto;
+    z-index: 1;
 }
 
 .logo-container {
@@ -58,7 +55,6 @@
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
-    font-family: "Poppins", sans-serif;
     display: flex;
     align-items: center;
 }
@@ -67,191 +63,136 @@
     margin-right: 0.8rem;
 }
 
+/* Main Music Section */
 .music {
     margin-left: 20vw;
     width: 80vw;
     height: 100vh;
     background-color: #6DBDE5;
-    background-image: url(../assets/trees-7072255.jpg);
+    background-image: url('../assets/yoga-2176668_1920.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 4rem;
-    /* padding-left: 5rem; */
     display: flex;
     flex-direction: column;
     overflow-y: auto;
 }
 
-.music-label {
-    font-size: 2.5rem;
-    font-family: "Poppins", sans-serif;
-    color: #fff;
-    margin-bottom: 1rem;
-}
-
 .music-content {
-    flex: 1;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
+    margin-top: 2rem; /* Ensure there's space between dropdown and content */
 }
 
 .music-card {
-    width: calc(31.333% - 1rem);
-    height: 40vh;
-    background-color: #2C2E44;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    justify-content: flex-start; /* Align content to the top */
-    align-items: center;
-    color: #fff;
-    flex-direction: column; /* Stack content vertically */
-    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     position: relative;
-    overflow: hidden; /* Ensure the overlay stays within the card boundaries */
-}
-
-.overlay {
-    position: absolute;
-    top: 0; /* Positioned at the top */
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    opacity: 1; /* Always visible */
-    z-index: 2; /* Ensure the overlay is above other elements */
-    border-radius: 10px; /* Match the card's border radius */
-}
-
-.overlay h1 {
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
+    width: calc(33% - 2rem);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.music-card audio {
+    display: none;
 }
 
 .music-card img {
-    max-width: 100%;
-    max-height: 70%; /* Limit image height to 70% of the card */
-    border-radius: 10px;
-    object-fit: contain;
-    z-index: 1; /* Ensure the image is below the overlay */
-}
-
-.music-card audio {
     width: 100%;
-    margin-top: auto;
-    background-color: transparent; /* Make the background transparent to blend in */
-    padding: 0.5rem;
-    color: #fff; /* Ensure text color is white for contrast */
-    outline: none;
-    border: none;
-    box-shadow: none;
-    z-index: 1; /* Ensure the audio controls are below the overlay */
-}
-
-
-.music-card audio::-webkit-media-controls-panel {
-    background-color: #2C2E44; /* Matches the card background */
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
-    padding: 0.5rem;
 }
 
-.music-card audio::-webkit-media-controls-play-button,
-.music-card audio::-webkit-media-controls-current-time-display,
-.music-card audio::-webkit-media-controls-time-remaining-display,
-.music-card audio::-webkit-media-controls-timeline,
-.music-card audio::-webkit-media-controls-volume-slider {
-    filter: brightness(1.5); /* Brighter controls for better visibility */
-}
-.music-card audio::-webkit-media-controls-current-time-display,
-.music-card audio::-webkit-media-controls-time-remaining-display{
-    color: aliceblue;
+.music-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.music-card audio::-webkit-media-controls-play-button,
-.music-card audio::-webkit-media-controls-volume-slider-container {
-    background-color: #d76de5; /* Light blue for play and volume buttons */
-    border-radius: 50%;
+.music-card:hover .overlay {
+    opacity: 1;
+}
+
+.music-card .overlay h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.music-card .media-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.music-card .media-player button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
     transition: background-color 0.3s ease;
 }
 
-.music-card audio::-webkit-media-controls-play-button:hover,
-.music-card audio::-webkit-media-controls-volume-slider-container:hover {
-    background-color: #3A3C60; /* Darker blue on hover for interaction feedback */
+.music-card .media-player button:hover {
+    background-color: #555;
 }
 
-.music-card audio::-webkit-media-controls-mute-button {
-    filter: invert(100%) brightness(1.2); /* Invert for visibility */
-    background-color: #6DBDE5; /* Same as play button */
-    border-radius: 50%;
-    padding: 0.2rem;
-}
-
-.music-card audio::-webkit-media-controls-mute-button:hover {
-    background-color: #3A3C60; /* Darker on hover */
-}
-
-.music-card audio::-webkit-media-controls-timeline {
-    background-color: transparent ;/* White timeline for contrast */
-    height: 5px;
+.music-card .media-player .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
     border-radius: 5px;
     overflow: hidden;
-    border: none;
-}
-
-.music-card audio::-webkit-media-controls-timeline-container {
     margin-top: 0.5rem;
-    border: none;
 }
 
-.music-card audio::-webkit-media-controls-volume-slider {
-    height: 5px;
+.music-card .media-player .progress {
+    width: 0;
+    height: 100%;
+    background-color: #3a3c60;
+    transition: width 0.1s;
+}
+
+.music-card .media-player .time {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Dropdown Styles */
+.music-label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+#select-music {
+    font-size: 1rem;
+    padding: 0.5rem;
     border-radius: 5px;
-
+    border: 1px solid #ddd;
+    
 }
-
-.music-card audio::-webkit-media-controls-volume-slider-thumb {
-    background-color: #fff; /* White thumb for better visibility */
-}
-
-.music-card audio::-webkit-media-controls-current-time-display,
-.music-card audio::-webkit-media-controls-time-remaining-display {
-    font-family: "Poppins", sans-serif; /* Consistent with UI font */
-    font-weight: 500;
-}
-
-
-.music-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-
-
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        box-shadow: none;
-    }
-
-    .music {
-        margin-left: 0;
-        width: 100vw;
-    }
-
-    .music-card {
-        width: 100%;
-        height: auto;
-    }
-
-    .navlist li {
-        padding: 1rem;
-        text-align: center;
-    }
-}
-

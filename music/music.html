@@ -20,9 +20,10 @@
 
             <div class="navlist-container">
                 <ul class="navlist">
+                    
                     <li><a href="../home/home.html"><i class="fa-solid fa-house-chimney"></i><span class="ps-4">Home</span></a></li>
                     <li><a href="../music/music.html"><i class="fa-solid fa-music"></i><span class="ps-4">Music</span></a></li>
-                    <li><a href="../scene/"><i class="fa-solid fa-mountain"></i><span class="ps-4">Scene</span></a></li>
+                    <li><a href="../scene/scene.html"><i class="fa-solid fa-mountain"></i><span class="ps-4">Scene</span></a></li>
                     <li><a href="../relax&breathe/relax.html"><i class="fa-solid fa-heart-pulse"></i><span class="ps-4">Relax and Breathe</span></a></li>
                     <li><a href=""><i class="fa-solid fa-comments"></i><span class="ps-4">Talk to hope</span></a></li>
                 </ul>
@@ -38,8 +39,7 @@
                         <option value="all">All</option>
                         <option value="lofi">Lofi</option>
                         <option value="instrumental">Instrumental</option>
-                        <option value="nature&instrument">Nature and Instrument</option>
-                        <option value="naturemelodies">Nature Melodies</option>
+                        <option value="nature">Nature</option>
                         <option value="classicalmusic">Classical Music</option>
                         <option value="motivating">Motivating</option>
                         <option value="ambient">Ambient</option>
@@ -54,20 +54,45 @@
                 <div class="music-card lofi col-3">
                     <div class="overlay">
                         <h1>Lofi-orchestra</h1>
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
                     </div>
                     <img src="../assets/healing water.jpg" alt="Healing Water">
                     <audio src="../assets/./lofimusic/lofi-orchestra-162306.mp3" controls></audio>
                 </div>
                 <div class="music-card lofi col-3">
                     <div class="overlay">
-                        <h1>Lofi-relax-travel</h1>
-                    </div>
+                        <h1>Lofi-Study</h1>
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
+                    </div> 
                     <img src="../assets/tears of joy.jpg" alt="Tears of Joy">
-                    <audio src="../assets/./lofimusic/lofi-relax-travel-by-lofium-123560.mp3" controls></audio>
+                    <audio src="../assets/./lofimusic/for-a-dream-lofi-vibes-216038.mp3" controls></audio>
                 </div>
                 <div class="music-card lofi col-3">
                     <div class="overlay">
                         <h1>Lofi-music</h1>
+                        
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
                     </div>
                     <img src="../assets/kiss the sky.jpg" alt="Kiss the Sky">
                     <audio src="../assets/./lofimusic/lofi-study-112191.mp3" controls></audio>
@@ -76,178 +101,179 @@
 
             <!-- Instrumental section -->
             <div class="music-content row">
-                <div class="music-card col-3">
+                <div class="music-card instrumental col-3">
                     <div class="overlay">
                         <h1>-Caves of Dawn</h1>
+                       
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
                     </div>
                     <img src="../assets/a melodious voice.jpg" alt="A Melodious Voice">
                     <audio src="../assets/./instrumental/caves-of-dawn-10376.mp3" controls></audio>
                 </div>
-                <div class="music-card col-3">
+                <div class="music-card instrumental col-3">
                     <div class="overlay">
                         <h1>Instrumental-Presentation</h1>
+                      
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
                     </div>
                     <img src="../assets/rise up.jpg" alt="Rise Up">
                     <audio src="../assets/./instrumental/instrumental-presentation-186789.mp3" controls></audio>
                 </div>
-                <div class="music-card col-3">
+                <div class="music-card instrumental col-3">
                     <div class="overlay">
                         <h1>Jazz Funk Groove</h1>
+                        
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
                     </div>
                     <img src="../assets/wistful harp.jpg" alt="Wistful Harp">
                     <audio src="../assets/./instrumental/jazz-funk-groove-instrumental-222618 (1).mp3" controls></audio>
                 </div>
             </div>
 
+            <!-- Nature section -->
             <div class="music-content row">
-                <div class="music-card col-3">
+                <div class="music-card nature col-3">
+                     <div class="overlay">
+                        <h1>Nature walk</h1>
+                     
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
+                    </div>
                     <img src="../assets/they say i can't.jpg" alt="They Say I Can't">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                    <audio src="../assets/./nature/nature-walk-124997.mp3" controls></audio>
                 </div>
-                <div class="music-card col-3">
+                <div class="music-card nature col-3">
+                     <div class="overlay">
+                        <h1>Lofi-orchestra</h1>
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
+                        <h1>Nature Calls</h1>
+                    </div>
                     <img src="../assets/journey to the promise.jpg" alt="Journey to the Promise">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                    <audio src="../assets/./nature/nature-calls-136344.mp3" controls></audio>
                 </div>
-                <div class="music-card col-3">
+                <div class="music-card nature col-3">
+                     <div class="overlay">
+                        <h1>Best of Nature</h1>
+                        
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
+                    </div>
                     <img src="../assets/lifting dreams.jpg" alt="Lifting Dreams">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                    <audio src="../assets/./nature/the-beat-of-nature-122841.mp3" controls></audio>
                 </div>
             </div>
+            
+            <!-- Motivating  -->
             <div class="music-content row">
-                <div class="music-card col-3">
-                    <img src="../assets/healing water.jpg" alt="Healing Water">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/tears of joy.jpg" alt="Tears of Joy">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/kiss the sky.jpg" alt="Kiss the Sky">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-            </div>
-
-            <div class="music-content row">
-                <div class="music-card col-3">
+                <div class="music-card motivating col-3">
+                     <div class="overlay">
+                        <h1>Motivating inspiration</h1>
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
+                    </div>
                     
                     <img src="../assets/a melodious voice.jpg" alt="A Melodious Voice">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                    <audio src="../assets/./motivating/motivating-inspirational-151339.mp3" controls></audio>
                 </div>
-                <div class="music-card col-3">
+                <div class="music-card motivating col-3">
+                     <div class="overlay">
+                        <h1>positive motivation</h1>
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
+                    </div>
                     <img src="../assets/rise up.jpg" alt="Rise Up">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                    <audio src="../assets/./motivating/optimistic-active-celebratory-energetic-positive-motivating-music-183140.mp3" controls></audio>
                 </div>
-                <div class="music-card col-3">
+                <div class="music-card motivating col-3">
+                     <div class="overlay">
+                        <h1>Stampting Rock</h1>
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
+                    </div>
                     <img src="../assets/wistful harp.jpg" alt="Wistful Harp">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                    <audio src="../assets/./motivating/stomping-rock-four-shots-111444.mp3" controls></audio>
                 </div>
             </div>
 
+            <!-- ambient  -->
             <div class="music-content row">
-                <div class="music-card col-3">
+                <div class="music-card ambient col-3">
+                     <div class="overlay">
+                        <h1>Ambient Chill</h1>
+                        <div class="media-player">
+                            <button id="play-pause">Play/Pause</button>
+                            <button id="stop">Stop</button>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time">00:00</div>
+                        </div>
+                    </div>
                     <img src="../assets/they say i can't.jpg" alt="They Say I Can't">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
+                    <audio src="../assets/./ambient-chill-hip-hop-background-music-152969 (1).mp3" controls></audio>
                 </div>
-                <div class="music-card col-3">
-                    <img src="../assets/journey to the promise.jpg" alt="Journey to the Promise">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/lifting dreams.jpg" alt="Lifting Dreams">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
+                
             </div>
-            <div class="music-content row">
-                <div class="music-card col-3">
-                    <img src="../assets/healing water.jpg" alt="Healing Water">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/tears of joy.jpg" alt="Tears of Joy">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/kiss the sky.jpg" alt="Kiss the Sky">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-            </div>
+          
 
-            <div class="music-content row">
-                <div class="music-card col-3">
-                    
-                    <img src="../assets/a melodious voice.jpg" alt="A Melodious Voice">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/rise up.jpg" alt="Rise Up">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/wistful harp.jpg" alt="Wistful Harp">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-            </div>
-
-            <div class="music-content row">
-                <div class="music-card col-3">
-                    <img src="../assets/they say i can't.jpg" alt="They Say I Can't">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/journey to the promise.jpg" alt="Journey to the Promise">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/lifting dreams.jpg" alt="Lifting Dreams">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-            </div>
-            <div class="music-content row">
-                <div class="music-card col-3">
-                    <img src="../assets/healing water.jpg" alt="Healing Water">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/tears of joy.jpg" alt="Tears of Joy">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/kiss the sky.jpg" alt="Kiss the Sky">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-            </div>
-
-            <div class="music-content row">
-                <div class="music-card col-3">
-                    
-                    <img src="../assets/a melodious voice.jpg" alt="A Melodious Voice">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/rise up.jpg" alt="Rise Up">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/wistful harp.jpg" alt="Wistful Harp">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-            </div>
-
-            <div class="music-content row">
-                <div class="music-card col-3">
-                    <img src="../assets/they say i can't.jpg" alt="They Say I Can't">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/journey to the promise.jpg" alt="Journey to the Promise">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-                <div class="music-card col-3">
-                    <img src="../assets/lifting dreams.jpg" alt="Lifting Dreams">
-                    <audio src="../assets/perfect-beauty-191271.mp3" controls></audio>
-                </div>
-            </div>
         </div>
     </section>
     <script src="music.js"></script>
