@@ -622,4 +622,10 @@
       bottom: 1rem;
       left: 18%;
     }
-   
+    @media (max-width: 768px) {
+      .sidebar {
+          width: 100%;
+          height: auto;
+          position: static;
+      }
+    }
