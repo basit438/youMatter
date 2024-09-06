@@ -78,15 +78,15 @@ body, html {
 .home-content {
     margin-left: 20vw;
     width: 80vw;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-image: url(../assets/yoga-2176668_1920.jpg); */
-    background-color: #f8f9fc;
+    background-image: url(../assets/yoga-2176668_1920.jpg);
+    /* background-color: #f8f9fc; */
     /* overflow: hidden; */
-    background: fixed url(../assets/yoga-2176668_1920.jpg);
+    /* background: fixed url(../assets/yoga-2176668_1920.jpg); */
 }
 
 .app-container {
