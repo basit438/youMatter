@@ -7,82 +7,6 @@
     --link: #1e2ebd;
   }
   
-  /* preload */
-  .preload {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(
-      to left top,
-      rgb(81, 123, 232) 80%,
-      rgb(60, 166, 232)
-    );
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease;
-  }
-  .text-loader {
-    position: absolute;
-    top: 35vh;
-    font-size: 18px;
-    color: var(--light);
-  }
-  
-  .preload > span {
-    background: rgb(175, 199, 243);
-    border-radius: 50%;
-    margin: 5rem 0.5rem;
-    animation: bouncingLoader 0.8s infinite alternate;
-  }
-  .preload > span:nth-child(2) {
-    animation-delay: 0.5s;
-  }
-  
-  .preload > span:nth-child(3) {
-    animation-delay: 0.7s;
-  }
-  
-  /* Define the animation called bouncingLoader. */
-  @keyframes bouncingLoader {
-    from {
-      width: 0.1rem;
-      height: 0.1rem;
-      opacity: 1;
-      transform: translate3d(0);
-    }
-    to {
-      width: 1rem;
-      height: 1rem;
-      opacity: 0.1;
-      transform: translate3d(0, -1rem, 0);
-    }
-  }
-  .preload-finish {
-    opacity: 0;
-    position: none;
-    z-index: -999;
-  }
-  /* prelaod finish */
-  
-  /* body */
-  
-  body {
-    font-family: "Poppins", sans-serif;
-    background: url(../assets/rise\ up.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100%;
-    position: relative;
-  }
-  
-
-  
-  
   li {
     list-style: none;
   }
@@ -121,7 +45,7 @@
     left: 0;
     width: 20vw;
     height: 100vh;
-    background: linear-gradient(240deg, rgba(58, 85, 118, 0.7) 10%, #2c2e44 70%);
+    background-color: #2C2E44;
     box-shadow: 3px 5px 6px rgba(45, 55, 68, 0.3);
     padding: 1.25rem 0.5rem 2rem 0.5rem;
     z-index: 2;
@@ -154,20 +78,15 @@
     transition: 0.1s ease;
   }
   .nav-text {
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
   }
   .nav-link:hover {
-    background: linear-gradient(190deg, rgb(240, 117, 199), rgba(178, 117, 240));
-    color: var(--dark);
+   background-color:  #3A3C60;;
+    /* color: var(--dark); */
   }
   .nav-link:hover .nav-icon {
     transform: scale(1.1);
-  }
-  .active {
-    padding: 0.5rem;
-    background: linear-gradient(190deg, rgb(240, 117, 199), rgba(178, 117, 240));
-    color: var(--dark);
   }
   
   /* content */

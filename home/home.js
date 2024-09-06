@@ -1,3 +1,7 @@
+window.addEventListener("load", () => {
+    const preload = document.querySelector(".preload");
+    preload.classList.add("preload-finish");
+  });
 window.onload = function() {
     let greetMessages = [
         "You're awesome!", "Make it happen.", "Be good. Do good.",
