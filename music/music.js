@@ -24,12 +24,15 @@ selectMusic.addEventListener("change", (e) => {
 musicCards.forEach(card => {
     card.addEventListener("click", () => {
         let audioSrc = card.querySelector("audio").src;
-        if (currentCard !== card) {
+        if (currentCard !== card || audio.src !== audioSrc) {
             audio.src = audioSrc;
+            audio.load(); // Ensure the audio is loaded
+            audio.play(); // Play the audio when a card is clicked
             currentCard = card;
+            audioPlayer.style.display = "flex"; // Show the audio player
+        } else {
+            togglePlay(); // Toggle play/pause if the same card is clicked
         }
-        togglePlay();
-        audioPlayer.style.display = "flex"; // Show the audio player when a card is clicked
     });
 });
 
@@ -49,7 +52,12 @@ stopBtn.addEventListener("click", () => {
     audio.pause();
     audio.currentTime = 0;
     playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
-    audioPlayer.style.display = "none"; // Hide the audio player when stop is clicked
+    audioPlayer.style.display = "none"; // Hide the audio player
+});
+
+audio.addEventListener("loadedmetadata", () => {
+    // This event fires when the audio's metadata is loaded
+    timeDisplay.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
 });
 
 audio.addEventListener("timeupdate", () => {

@@ -1,0 +1,79 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    width: 100vw;
+ 
+    position: relative; 
+    overflow: hidden; 
+}
+
+    .sidebar {
+        height: 100vh;
+        width: 20vw;
+        background-color: #2C2E44;
+        box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.75);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: auto;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .logo-container {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo-container img {
+        width: 60%;
+        height: auto;
+    }
+    
+    .navlist {
+        padding-left: 0;
+        width: 100%;
+    }
+    
+    .navlist li {
+        list-style: none;
+        padding: 1.2rem 1.5rem;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navlist li:hover {
+        background-color: #3A3C60;
+    }
+    
+    .navlist li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navlist li i {
+        margin-right: 0.8rem;
+    }
