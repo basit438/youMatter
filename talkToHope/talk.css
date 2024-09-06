@@ -78,16 +78,19 @@ body, html {
 .home-content {
     margin-left: 20vw;
     width: 80vw;
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url(../assets/yoga-2176668_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow-y: auto;
+}
     /* background-color: #f8f9fc; */
     /* overflow: hidden; */
     /* background: fixed url(../assets/yoga-2176668_1920.jpg); */
-}
 
 .app-container {
     width: 90%;
